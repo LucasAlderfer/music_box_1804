@@ -13,7 +13,7 @@ describe 'user index' do
     song_7 = artist.songs.create(title: "Wheel in the Sky", length: 373, play_count: 23897)
     song_8 = artist.songs.create(title: "Yesterday", length: 3476, play_count: 98346823)
 
-    visit '/songs'
+    visit songs_path
 
     expect(page).to have_content("All Songs")
     expect(page).to have_content(song_1.title)

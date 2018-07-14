@@ -1,0 +1,24 @@
+<h2>Create A New Song</h2>
+
+
+<%= form_for [@artist, @song], :id => "new-song-form" do |f| %>
+
+  <div class="form-field">
+    <p><%=f.label :title%></p>
+    <%=f.text_field :title%>
+  </div>
+
+  <div class="form-field">
+    <p><%=f.label :length%></p>
+    <%=f.text_field :length%>
+  </div>
+
+  <div class="form-field">
+    <p><%=f.label :play_count%></p>
+    <%=f.text_field :play_count%>
+  </div>
+
+  <div class="form-field">
+    <%=f.submit%>
+  </div>
+<%end%>
