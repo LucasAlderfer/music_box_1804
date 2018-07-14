@@ -1,0 +1,37 @@
+body {
+  background-image: url("/assets/cassette.jpg");
+  background-size: cover;
+  font-family: 'Cormorant Unicase', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#new_song {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  border-radius: 20%;
+}
+
+input[type=submit] {
+  color: white;
+  background-color: darkblue;
+  margin-top: 2vh;
+}
